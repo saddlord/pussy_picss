@@ -13,12 +13,9 @@ Order.destroy_all
 Cart.destroy_all
 ItemCartJoin.destroy_all
 ItemOrderJoin.destroy_all
-10.times do
+5.times do |t|
     user = User.create(email: "#{Faker::Name.first_name}@yopmail.com", password: "azerty123")
-#   city = ["Wonderland", "LaCasaDeBays", "Ton quartier préféré de ton quartier préféré", "Bisounoursland"].sample
-  # user = User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Lorem.sentence(word_count: 10, supplemental: true), email: "#{Faker::Name.first_name}@yopmail.com",password: "password")
-#   event = Event.create(title: Faker::Game.title, description: Faker::Lorem.sentence(word_count: 120, supplemental: true),price: Faker::Number.between(from: 1, to: 1000), location: city, start_date: Faker::Date.forward(days: 23), duration: 10)
-#   attendance1 = Attendance.create(user: user, event: event)
+    item = Item.create(title: Faker::Name.name, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et", price: rand(0..15), image_url: "big_pussy#{t}")
 end
-# puts "10 users, attendances et events on été crées"
+puts "5 users et items on été créé"
 

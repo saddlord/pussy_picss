@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ .home-page {
+   height: 94vh;
+   background-color: #75BD4B;
+ }

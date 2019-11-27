@@ -15,7 +15,7 @@ ItemCartJoin.destroy_all
 ItemOrderJoin.destroy_all
 5.times do |t|
     user = User.create(email: "#{Faker::Name.first_name}@yopmail.com", password: "azerty123")
-    item = Item.create(title: Faker::Name.name, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et", price: rand(0..15), image_url: "big_pussy#{t}")
+    item = Item.create(title: Faker::Name.name, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et", price: rand(5..15), image_url: "big_pussy#{t}")
 end
 puts "5 users et items on été créé"
 

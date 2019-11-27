@@ -13,8 +13,16 @@
  *= require_tree .
  *= require_self
  */
+body {
+	  background-image: url("cat.jpg");
 
+}
  .home-page {
    height: 94vh;
    background-color: #75BD4B;
  }
+
+ .jumbotron {
+  background-image: url("");
+  background-size: cover;
+}
